@@ -1,19 +1,18 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 2rem;
-`
+`;
 
 export const Header = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-`
+`;
 
 export const ContactsCounter = styled.strong`
   font-size: 1.5rem;
-  color: #222;
-`
+`;
 
 export const NewContactButton = styled.a`
   color: ${({ theme }) => theme.colors.primary.main};
@@ -28,6 +27,83 @@ export const NewContactButton = styled.a`
 
   &:hover {
     background: ${({ theme }) => theme.colors.primary.main};
-    color: #FFF;
+    color: #fff;
   }
+`;
+
+export const ListContainer = styled.div`
+  margin-top: 1.5rem;
+`;
+
+export const ListHeader = styled.header`
+  margin-bottom: 0.5rem;
+`;
+
+export const OrderButton = styled.button`
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+`;
+
+export const OrderName = styled.span`
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.primary.main};
+`;
+
+export const Image = styled.img``;
+
+export const Card = styled.div`
+  background: #fff;
+  box-shadow: 8px 4px 10px rgba(0, 0, 0, 0.04);
+  padding: 1rem;
+  border-radius: 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & + & {
+    margin-top: 1rem;
+  }
+`;
+
+export const Info = styled.div``
+
+export const ContactContainer = styled.div`
+  display: flex;
+  align-items: center;
 `
+
+export const ContactName = styled.strong``
+
+export const Contacts = styled.span`
+  display: block;
+  font-size: 14px;
+
+  color: ${({ theme }) => theme.colors.gray[200]};
+`
+export const CategoryName = styled.small`
+  background: ${({ theme }) => theme.colors.primary.lighter};
+  color: ${({ theme }) => theme.colors.primary.main};
+  font-weight: bold;
+  padding: 4px;
+  border-radius: 4px;
+  text-transform: uppercase;
+
+  margin-left: 0.5rem;
+`
+
+export const Actions = styled.div`
+  display: flex;
+  align-items: center;
+`
+
+export const ActionButton = styled.button`
+  background: transparent;
+  border: none;
+  margin-left: 0.5rem;
+`
+
+export const ActionLink = styled.a``
