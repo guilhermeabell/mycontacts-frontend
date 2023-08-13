@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   margin-top: 2rem;
@@ -33,7 +34,7 @@ export const Input = styled.input`
   }
 `
 
-export const NewContactButton = styled.a`
+export const NewContactButton = styled(Link)`
   color: ${({ theme }) => theme.colors.primary.main};
   text-decoration: none;
   font-weight: bold;
@@ -125,4 +126,4 @@ export const ActionButton = styled.button`
   margin-left: 0.5rem;
 `
 
-export const ActionLink = styled.a``
+export const ActionLink = styled(Link)``

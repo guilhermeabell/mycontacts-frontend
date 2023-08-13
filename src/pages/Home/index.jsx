@@ -11,7 +11,7 @@ export default function Home() {
       </S.InputSearchContainer>
       <S.Header>
         <S.ContactsCounter>3 contatos</S.ContactsCounter>
-        <S.NewContactButton>Novo contato</S.NewContactButton>
+        <S.NewContactButton to="/new"  >Novo contato</S.NewContactButton>
       </S.Header>
       <S.ListContainer>
         <S.ListHeader>
@@ -30,7 +30,7 @@ export default function Home() {
             <S.Contacts>(11)98822-94919</S.Contacts>
           </S.Info>
           <S.Actions>
-            <S.ActionLink href="http://">
+            <S.ActionLink to="/edit/123">
               <S.Image src={edit} alt="Editar" />
             </S.ActionLink>
             <S.ActionButton type="button">
@@ -38,42 +38,7 @@ export default function Home() {
             </S.ActionButton>
           </S.Actions>
         </S.Card>
-        <S.Card>
-          <S.Info>
-            <S.ContactContainer>
-              <S.ContactName>Guilherme Abel</S.ContactName>
-              <S.CategoryName>instagram</S.CategoryName>
-            </S.ContactContainer>
-            <S.Contacts>guilhermeabel@gmail.com</S.Contacts>
-            <S.Contacts>(11)98822-94919</S.Contacts>
-          </S.Info>
-          <S.Actions>
-            <S.ActionLink href="http://">
-              <S.Image src={edit} alt="Editar" />
-            </S.ActionLink>
-            <S.ActionButton type="button">
-              <S.Image src={trash} alt="Excluir" />
-            </S.ActionButton>
-          </S.Actions>
-        </S.Card>
-        <S.Card>
-          <S.Info>
-            <S.ContactContainer>
-              <S.ContactName>Guilherme Abel</S.ContactName>
-              <S.CategoryName>instagram</S.CategoryName>
-            </S.ContactContainer>
-            <S.Contacts>guilhermeabel@gmail.com</S.Contacts>
-            <S.Contacts>(11)98822-94919</S.Contacts>
-          </S.Info>
-          <S.Actions>
-            <S.ActionLink href="http://">
-              <S.Image src={edit} alt="Editar" />
-            </S.ActionLink>
-            <S.ActionButton type="button">
-              <S.Image src={trash} alt="Excluir" />
-            </S.ActionButton>
-          </S.Actions>
-        </S.Card>
+
       </S.ListContainer>
     </S.Container>
   );
