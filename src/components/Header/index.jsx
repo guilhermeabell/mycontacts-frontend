@@ -5,9 +5,6 @@ export default function Header() {
   return (
     <S.Container>
       <S.Image src={logo} alt="Logo MyContacts" />
-      <S.InputSearchContainer>
-      <S.Input placeholder="Pesquise pelo nome..." />
-      </S.InputSearchContainer>
     </S.Container>
   )
 }
