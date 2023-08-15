@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Container = styled.div`
   margin-top: 2rem;
+  position: relative;
 `;
 
 export const Header = styled.header`
