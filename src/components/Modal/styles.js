@@ -42,6 +42,9 @@ export const ButtonCancel = styled.button`
 
 export const Title = styled.h1`
   font-size: 1.3rem;
+  color: ${({ theme, danger }) => (
+    danger ? theme.colors.main : theme.colors.gray[900]
+  )}
 `
 export const Content = styled.p`
   margin-top: 0.5rem;
